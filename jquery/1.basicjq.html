@@ -1,50 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Hello Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-
 <body>
-    <!--
-    jQuery is a JavaScript Library.
 
-jQuery greatly simplifies JavaScript programming.
+  <h2>Welcome!</h2>
 
-jQuery is easy to learn.
-What is jQuery?
-jQuery is a lightweight, "write less, do more", JavaScript library.
+  <script>
+    // jQuery code runs after page loads
+    $(document).ready(function() {
+      console.log("Hello from jQuery!");
+      $("body").append("<p>This message is printed using jQuery 😃</p>");
+    });
+  </script>
 
-The purpose of jQuery is to make it much easier to use JavaScript on your website.
-
-jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
-
-jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
-
-The jQuery library contains the following features:
-
-HTML/DOM manipulation
-CSS manipulation
-HTML event methods
-Effects and animations
-AJAX
-Utilities
-
-The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
-
-Basic syntax is: $(selector).action()
-A $ sign to define/access jQuery
-A (selector) to "query (or find)" HTML elements
-A jQuery action() to be performed on the element(s)
--->
-<script>
-    document.write("hello")
-</script>
 </body>
-
 </html>
