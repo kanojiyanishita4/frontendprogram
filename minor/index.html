@@ -3,93 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Campus Mitra</title>
-  <link rel="stylesheet" href="minor.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
+  <title>Campus Mitra | College Companion</title>
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="minor.css" />
+</head>
 <body>
-  <!-- ===== NAVBAR ===== -->
-  <header class="navbar">
-    <div class="logo">🏫 Campus Mitra</div>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo"><i class="fa-solid fa-graduation-cap"></i> Campus Mitra</div>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#login">Login</a></li>
-      </ul>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#services">Services</a>
+      <button id="login-btn"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
     </nav>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section id="home" class="hero">
-    <h1>Welcome to <span>Campus Mitra</span></h1>
-    <p>Your all-in-one digital assistant for smarter college life.</p>
-    <button class="cta">Get Started</button>
-  </section>
-
-  <!-- ===== ABOUT SECTION ===== -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      Campus Mitra simplifies college life by bringing everything into one platform —
-      from timetables to notes, announcements, and AI chatbot support. Built for
-      students, teachers, and administrators.
-    </p>
+  <!-- ===== HERO / ABOUT ===== -->
+  <section id="about" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>Campus Mitra</span></h1>
+      <p>Your all-in-one college assistant — manage timetable, attendance, notes, and more in one place!</p>
+      <a href="#features" class="explore-btn">Explore More <i class="fa-solid fa-arrow-down"></i></a>
+    </div>
   </section>
 
   <!-- ===== FEATURES SECTION ===== -->
   <section id="features" class="features">
-    <h2>Key Features</h2>
-    <div class="feature-grid">
-      <div class="feature-item"><i class="fas fa-calendar-alt"></i><h3>Timetable</h3></div>
-      <div class="feature-item"><i class="fas fa-user-check"></i><h3>Attendance</h3></div>
-      <div class="feature-item"><i class="fas fa-file-alt"></i><h3>Assignments</h3></div>
-      <div class="feature-item"><i class="fas fa-book-open"></i><h3>Notes</h3></div>
-      <div class="feature-item"><i class="fas fa-bullhorn"></i><h3>Announcements</h3></div>
-      <div class="feature-item"><i class="fas fa-robot"></i><h3>AI Chatbot</h3></div>
+    <h2><i class="fa-solid fa-star"></i> Features</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <i class="fa-solid fa-calendar-days"></i>
+        <h3>Timetable</h3>
+        <p>View daily or weekly class schedule easily.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-clipboard-list"></i>
+        <h3>Attendance</h3>
+        <p>Track attendance and stay on top of your progress.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-file-lines"></i>
+        <h3>Assignments</h3>
+        <p>Check upcoming assignments and deadlines at a glance.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-bell"></i>
+        <h3>Announcements</h3>
+        <p>Never miss important updates and college notices.</p>
+      </div>
     </div>
   </section>
 
   <!-- ===== SERVICES SECTION ===== -->
   <section id="services" class="services">
-    <h2>Our Services</h2>
+    <h2><i class="fa-solid fa-handshake"></i> Services</h2>
     <div class="service-grid">
-      <div class="service-card"><i class="fas fa-user-graduate"></i><h3>For Students</h3><p>Access notes, assignments, and attendance anytime.</p></div>
-      <div class="service-card"><i class="fas fa-chalkboard-teacher"></i><h3>For Teachers</h3><p>Upload resources, track attendance, share updates.</p></div>
-      <div class="service-card"><i class="fas fa-user-tie"></i><h3>For Admin</h3><p>Manage announcements and oversee academic progress.</p></div>
-      <div class="service-card"><i class="fas fa-users"></i><h3>For Parents</h3><p>Track student performance and updates with ease.</p></div>
+      <div class="service-box">
+        <i class="fa-solid fa-user-graduate"></i>
+        <h3>Student Dashboard</h3>
+        <p>Get all your academic info in one place — timetable, notes & attendance.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h3>Teacher Panel</h3>
+        <p>Upload assignments, notes & announcements for your students.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-user-tie"></i>
+        <h3>Admin Portal</h3>
+        <p>Manage users, handle notices, and monitor college activity.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-users"></i>
+        <h3>Parent Access</h3>
+        <p>Check your ward’s progress, attendance & performance anytime.</p>
+      </div>
     </div>
   </section>
 
-  <!-- ===== LOGIN SECTION ===== -->
-  <section id="login" class="login-section">
-    <h2>Login As</h2>
-    <div class="login-buttons">
-      <button onclick="loginAs('student')"><i class="fas fa-user-graduate"></i> Student</button>
-      <button onclick="loginAs('teacher')"><i class="fas fa-chalkboard-teacher"></i> Teacher</button>
-      <button onclick="loginAs('parent')"><i class="fas fa-user-friends"></i> Parent</button>
-      <button onclick="loginAs('admin')"><i class="fas fa-user-tie"></i> Admin</button>
-    </div>
-  </section>
-
-  <!-- ===== CHATBOT BUTTON ===== -->
-  <div id="chatbot-btn" onclick="toggleChatbot()">
-    <i class="fas fa-comments"></i>
-  </div>
-
-  <!-- ===== CHATBOT PANEL ===== -->
-  <div id="chatbot-panel">
-    <div id="chat-header">🤖 Campus Mitra Chatbot</div>
-    <div id="chat-body"></div>
-    <div id="chat-input">
-      <input type="text" id="userQuery" placeholder="Ask me about Campus Mitra..." />
-      <button onclick="sendQuery()"><i class="fas fa-paper-plane"></i></button>
+  <!-- ===== LOGIN POPUP ===== -->
+  <div id="login-modal" class="login-modal">
+    <div class="login-content">
+      <span id="close-login">&times;</span>
+      <h2><i class="fa-solid fa-right-to-bracket"></i> Login</h2>
+      <p>Select your role:</p>
+      <div class="login-options">
+        <button class="role-btn"><i class="fa-solid fa-user-graduate"></i> Student</button>
+        <button class="role-btn"><i class="fa-solid fa-chalkboard-user"></i> Teacher</button>
+        <button class="role-btn"><i class="fa-solid fa-user-tie"></i> Admin</button>
+        <button class="role-btn"><i class="fa-solid fa-users"></i> Parent</button>
+      </div>
+      <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="login-submit">Login</button>
+      </form>
     </div>
   </div>
 
+  <footer>
+    <p>© 2025 Campus Mitra </p>
+  </footer>
+
+  <!-- JS -->
   <script src="index.js"></script>
 </body>
 </html>
