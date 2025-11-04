@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Campus Mitra — Your College Companion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="site-name">Campus <span>Mitra</span></div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#features" class="nav-link"><i class="fa-solid fa-star"></i> Features</a>
+      <a href="#services" class="nav-link"><i class="fa-solid fa-handshake"></i> Services</a>
+      <button id="openLogin" class="btn-outline"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+    </nav>
+  </header>
+
+
+     <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Your All-in-One Campus Partner</h1>
+        <p>Manage timetable, attendance, notes and announcements — all in one place.</p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="#features"><i class="fa-solid fa-rocket"></i> Get Started</a>
+          <button id="openLogin2" class="btn-ghost"><i class="fa-solid fa-user-graduate"></i> Login</button>
+        </div>
+      </div>
+      <div class="hero-image" aria-hidden="true"></div>
+    </section>
+
+         <section id="features" class="section features">
+      <h2 class="section-title"><i class="fa-solid fa-star"></i> Features</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon"><i class="fa-solid fa-calendar-days"></i></div>
+          <h3>Timetable</h3>
+          <p>See daily & weekly schedules and never miss a class.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+          <h3>Attendance</h3>
+          <p>Track attendance and monitor your progress.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
+          <h3>Notes</h3>
+          <p>Quick access to lecture notes and uploaded materials.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"><i class="fa-solid fa-bell"></i></div>
+          <h3>Announcements</h3>
+          <p>Receive instant alerts and important college updates.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <h2 class="section-title"><i class="fa-solid fa-handshake"></i> Services</h2>
+      <div class="service-grid">
+        <div class="service"><i class="fa-solid fa-user-graduate"></i> Student Dashboard</div>
+        <div class="service"><i class="fa-solid fa-chalkboard-user"></i> Teacher Panel</div>
+        <div class="service"><i class="fa-solid fa-user-tie"></i> Admin Portal</div>
+        <div class="service"><i class="fa-solid fa-users"></i> Parent Access</div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Campus Mitra — Your Smart College Companion</p>
+    </footer>
+
+    <!-- LOGIN MODAL -->
+    <div id="loginModal" class="modal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+            <button id="closeModal" class="modal-close" aria-label="Close">×</button>
+            <h3 id="loginTitle" class="modal-title"> Login</h3>
+
+            <div class="role-row">
+                <button class="role-btn active" data-role="student">Student</button>
+                <button class="role-btn" data-role="teacher">Teacher</button>
+                <button class="role-btn" data-role="parent">Parent</button>
+                <button class="role-btn" data-role="admin">Admin</button>
+            </div>
+
+            <!-- Student form (default) -->
+            <form id="loginForm" class="login-form" autocomplete="off">
+                <label class="visually-hidden" for="user">Username</label>
+                <input id="user" name="user" type="text" placeholder="Username" required />
+                <label class="visually-hidden" for="pass">Password</label>
+                <input id="pass" name="pass" type="password" placeholder="Password" required />
+                <div class="form-row">
+                    <button type="submit" class="btn-primary">Login</button>
+                    <div id="loginError" class="login-error" aria-live="polite"></div>
+                </div>
+            </form>
+
+            <!-- Teacher/Parent/Admin: simple message (not implemented) -->
+            <div id="otherMsg" class="other-msg hidden">
+                <p>This demo currently validates Student login only (teacher/parent/admin forms are placeholders).</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

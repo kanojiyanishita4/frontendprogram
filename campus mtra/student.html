@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Dashboard — Campus Mitra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dash-body">
+  
+  <header class="dash-header">
+    <div class="brand">
+      <div class="logo"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="site-name">Campus <span>Mitra</span></div>
+    </div>
+    <nav>
+      <button id="logoutBtn" class="btn-ghost"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </nav>
+  </header>
+
+  <main class="dash-main">
+    <h1 id="welcomeText"><i class="fa-solid fa-circle-user"></i> Welcome to Campus Mitra, Student!</h1>
+    <p class="muted" id="subtitle">Explore your academic resources.</p>
+
+    <section class="dash-cards">
+      <article class="dash-card" id="attCard">
+        <div class="card-emoji"><i class="fa-solid fa-chart-simple"></i></div>
+        <h3>View Attendance</h3>
+        <p>Check your attendance percentage per subject.</p>
+      </article>
+
+      <article class="dash-card" id="timeCard">
+        <div class="card-emoji"><i class="fa-solid fa-calendar-days"></i></div>
+        <h3>View Timetable</h3>
+        <p>See today's and this week's schedule.</p>
+      </article>
+
+      <article class="dash-card" id="notesCard">
+        <div class="card-emoji"><i class="fa-solid fa-book-open"></i></div>
+        <h3>View Notes</h3>
+        <p>Open subject notes and resources.</p>
+      </article>
+    </section>
+
+    <section id="panel" class="panel"></section>
+  </main>
+
+  <!-- ==== AI CHATBOT ==== -->
+<div id="chatbot">
+  <div id="chatHeader"><i class="fa-solid fa-robot"></i> Campus Mitra Assistant</div>
+  <div id="chatBody"></div>
+  <div id="chatInput">
+    <input type="text" id="userMessage" placeholder="Ask me anything..." />
+    <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Floating chat button -->
+<button id="chatToggle" title="Chat with Mitra">
+  <i class="fa-solid fa-comments"></i>
+</button>
+
+  <footer class="site-footer">
+    <p>© 2025 Campus Mitra</p>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
