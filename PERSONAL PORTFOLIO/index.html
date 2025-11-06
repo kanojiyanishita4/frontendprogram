@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi , I'm <span>Chetan Patel</span><br>
+                    From Hello world Institute</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------------- about------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-colm-1"> 
+                    <img src="images/aboutme.jpg">
+                </div>
+                <div class="about-colm-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">I am a passionate web developer specializing in building responsive, user-friendly,
+                        and performance-driven websites. With strong expertise in HTML, CSS, JavaScript, and Python, I
+                        create clean, functional, and scalable web applications. I enjoy solving complex problems,
+                        optimizing user experiences, and bringing creative ideas to life through code. Constantly
+                        learning new technologies, I aim to deliver innovative solutions that help businesses grow and
+                        users stay engaged. </p>
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="OpenTab('skills')">Skills</p>
+                        <p class="tab-link" onclick="OpenTab('experience')">Experience</p>
+                        <p class="tab-link" onclick="OpenTab('education')">Education</p>
+                    </div>
+                    <div id="skills" class="tab-content active-tab">
+                        <ul>
+                            <li>
+                                <span>UI?UX</span> <br> Designing Web/App interfaces
+                            </li>
+                            <li>
+                                <span>Web Development</span> <br>Web App Development
+                            </li>
+                            <li>
+                                <span>App Development</span> <br> Building Android/IOS apps
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="tab-content ">
+                        <ul>
+                            <li>
+                                <span>Frontend Development</span> <br> Creating responsive and interactive web
+                                interfaces
+                            </li>
+                            <li>
+                                <span>Backend Development</span> <br> Building secure and scalable server-side
+                                applications
+                            </li>
+                            <li>
+                                <span>Full-Stack Projects</span> <br> Delivering complete end-to-end web solutions
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-content">
+                        <ul>
+                            <li>
+                                <span>Bachelor of Computer Science</span> <br> XYZ University — 2020 - 2023
+                            </li>
+                            <li>
+                                <span>Higher Secondary Education</span> <br> ABC Senior Secondary School — 2018 - 2020
+                            </li>
+                            <li>
+                                <span>High School</span> <br> DEF Public School — 2016 - 2018
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------services-------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Design</h1>
+                    <p>Web design blends creativity and functionality, focusing on layout, colors, typography, and
+                        usability to deliver engaging, user-friendly digital experiences.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h1>UI/UX Design</h1>
+                    <p>UI/UX emphasizes intuitive design, smooth navigation, accessibility, and user satisfaction,
+                        creating digital products that are functional, engaging, and visually appealing.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h1>App Design</h1>
+                    <p>App design focuses on user-friendly interfaces, seamless functionality, visual consistency,
+                        performance, and accessibility to deliver engaging, efficient, and enjoyable mobile experiences.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------portfolio---------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="my-work">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people around the world. Download it from play store.</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people around the world. Download it from play store.</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Online Shoping App</h3>
+                        <p>The app connects you to talented people around the world. Download it from play store.</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------------------------------contect me------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>hellowolrd@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>8085896740</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Chetan's Resume.pdf" download class="btn btn1">Dowonload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Message" required></textarea>
+                        <button type="submit" class="btn btn1 btn2">Submit</button>
+                        <p class="msg"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © helloworld made with <i class="fa-solid fa-heart"></i> hello world institue</p>
+        </div>
+    </div>
+    <script>
+        let tablinks = document.querySelectorAll(".tab-link");
+        let tabContents = document.querySelectorAll(".tab-content");
+
+        function OpenTab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwbNDvT00ofDPgWuGr8TWQjXMqDh_9_5Bnqj4T3ATikmSXft8Kui0rcg12ROGUYHgDqJA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.querySelector(".msg");
+        form.addEventListener('submit', e => {
+
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerText = "message sent successfully";
+
+                    setTimeout(() => {
+                        msg.innerText = "";
+                    }, 3000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        let menu = document.querySelector("#menu");
+        function openmenu() {
+            menu.style.width = "150px";
+        }
+        function closemenu() {
+            menu.style.width = "0px";
+        }
+    </script>
+</body>
+
+</html>
